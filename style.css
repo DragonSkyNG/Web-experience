@@ -48,6 +48,9 @@ input {
 .register{
     margin-bottom: 150px;
 }
+.btn-link{
+    align-self: center;
+}
 
 .round-btn {
     padding: 5px;
