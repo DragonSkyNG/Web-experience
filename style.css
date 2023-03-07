@@ -12,9 +12,34 @@ body {
     font-family: Inter;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+}
+
 header h1 {
     text-align: center;
     color: var(--brightText);
+}
+
+nav {
+    background-color: var(--darkButton);
+    margin-bottom: 20px;
+    align-self: center;
+    width: 90%;
+    padding: 25px;
+    border-radius: 35px;
+}
+
+nav a {
+    margin-right: 15px;
+    color: var(--brightText);
+    text-decoration: none;
+}
+
+.active {
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--brightText);
 }
 
 main {
@@ -22,6 +47,8 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
+/* Login page styles Start */
 
 .login,
 .register {
@@ -45,10 +72,80 @@ input {
     background-color: var(--background);
 }
 
-.register{
+.register {
     margin-bottom: 150px;
 }
-.btn-link{
+
+/* Login page styles End */
+
+/* Home page styles Start */
+
+.available-movies {
+    width: 90%;
+    margin-bottom: 150px;
+    padding: 10px 25px;
+    background-color: var(--brightText);
+    border-radius: 35px;
+}
+
+.available-movies h2 {
+    text-align: center;
+}
+
+.movie-table {
+    width: 100%;
+}
+
+.movie-table tr {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 40px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+}
+
+.movie {
+    background-color: var(--background);
+    border-radius: 25px;
+}
+
+.movie img{
+    display: block;
+    margin: 0 auto;
+    width: 20px;
+    align-items: center;
+}
+
+.movie-table .movie {
+    height: 45px;
+}
+
+.movie-table th {
+    text-align: left;
+    align-self: flex-end;
+}
+
+.movie-table .instock{
+    text-align: center;
+}
+
+.movie-table td {
+    align-self: center;
+}
+
+.movie-table .table-button {
+    align-self: auto;
+}
+
+.movie-table th,
+.movie-table td {
+    flex-basis: 100%;
+}
+
+/* Home page styles End */
+
+.btn-link {
     align-self: center;
 }
 
@@ -62,6 +159,13 @@ input {
     border-radius: 10px;
 }
 
+.table-btn {
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: var(--brightText);
+    background-color: var(--darkButton);
+}
 
 footer {
     display: flex;
