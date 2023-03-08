@@ -37,6 +37,7 @@ nav a {
     color: var(--brightText);
     text-decoration: none;
 }
+
 nav a:hover,
 .active {
     padding-bottom: 2px;
@@ -85,7 +86,7 @@ input {
     width: 90%;
     margin-bottom: 150px;
     padding: 10px 25px 20px 25px;
-    
+
     background-color: var(--brightText);
     border-radius: 35px;
 }
@@ -112,7 +113,7 @@ input {
     border-radius: 25px;
 }
 
-.movie img{
+.movie img {
     display: block;
     margin: 0 auto;
     width: 20px;
@@ -124,11 +125,12 @@ input {
 }
 
 .movie-table th {
+    font-size:18px;
     text-align: left;
     align-self: flex-end;
 }
 
-.movie-table .instock{
+.movie-table .instock {
     text-align: center;
 }
 
@@ -146,6 +148,24 @@ input {
 }
 
 /* Home page styles End */
+
+.time { 
+    width: 50%;
+    display:flex;
+    background-color: var(--brightText);
+}
+.time .arrow{
+    flex-basis: 20%;
+}
+.time-text{
+    text-align: center;
+    flex-basis: 60%;
+}
+.arrow{
+    text-align: center  ;
+    color: var(--brightText);
+    background-color: var(--darkButton);
+}
 
 .btn-link {
     align-self: center;
@@ -167,6 +187,14 @@ input {
     border: none;
     color: var(--brightText);
     background-color: var(--darkButton);
+}
+
+.table-btn-red {
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: var(--brightText);
+    background-color: var(--redButton);
 }
 
 footer {
