@@ -125,7 +125,7 @@ input {
 }
 
 .movie-table th {
-    font-size:18px;
+    font-size: 18px;
     text-align: left;
     align-self: flex-end;
 }
@@ -149,20 +149,69 @@ input {
 
 /* Home page styles End */
 
-.time { 
+/* Profile page style Start */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.profile-row {
+    flex-basis: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    flex-basis: 50%;
+}
+
+.profile-picture img {
+    display: block;
+    margin: auto;
+    width: 150px;
+}
+
+.profile-details {
+    flex-basis: 50%;
+}
+
+.profile-buttons {
+    flex-basis: 100%;
+    padding-left: 13%;
+}
+
+.profile-buttons .round-btn {
+    width: 150px;
+    margin-right: 10px;
+}
+
+/* Profile page style End */
+
+.time {
     width: 50%;
-    display:flex;
+    display: flex;
     background-color: var(--brightText);
 }
-.time .arrow{
+
+.time .arrow {
     flex-basis: 20%;
 }
-.time-text{
+
+.time-text {
     text-align: center;
     flex-basis: 60%;
 }
-.arrow{
-    text-align: center  ;
+
+.arrow {
+    text-align: center;
     color: var(--brightText);
     background-color: var(--darkButton);
 }
